@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+canvas {
+  display: block;
+}
+
+#mycanvas {
+  width: 100%;
+  height: 100%;
+}
+#HEAD {
+  width: 90%;
+  height:10%;
+  margin-left: 80px;
+  position: relative;
+  font-family: 'Martel Sans', sans-serif;
+  color:  	#383838
+
+
+}
+
+#Test {
+  width: 90%;
+  height:88%;
+  position: relative;
+  margin-left: 80px;
+  margin-bottom: 40px;
+  border: 2px solid black;
+  border-radius: 8px;
+  border-color: : #383838
+}
+#treeHIDDEN {
+  float: left;
+  width: 40%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+#circular {
+  float: left;
+  width: 60%;
+  height: 100%;
+}
+
+#tree {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: -17;
+  overflow-y: scroll;
+}
+
+div#tooltip {
+  position: absolute;
+  display: inline-block;
+  padding: 10px;
+  font-family: 'Open Sans' sans-serif;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #999;
+  border-radius: 2px;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 1;
+}

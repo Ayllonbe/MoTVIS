@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+#wrapper {
+  margin-left: 200px;
+  margin-right:200px;
+
+}
+#content {
+  float: right;
+  width: 50%;
+  margin-right: 100px;
+
+}
+.bar {
+	fill: #6F257F;
+}
+#bubble{
+border: 2px solid #6F257F;
+  position: initial;
+}
+.toolTip {
+	position: absolute;
+  display: none;
+  min-width: 80px;
+  height: auto;
+  background: none repeat scroll 0 0 #ffffff;
+  border: 1px solid #6F257F;
+  padding: 14px;
+  text-align: center;
+}
+#sidebar {
+  float: left;
+  width: 55%;
+  margin-left: -200px;
+    height: 980px;
+}
+#cleared {
+  clear: both;
+}
+	.rects rect {
+  cursor: pointer;
+  fill: #fff;
+  stroke: black;
+  stroke-width: 1.5px;
+}
+
+.rects text {
+  font: 25px sans-serif;
+  pointer-events: none;
+}
+.node--leaf--pulsate{
+  border: 2px solid #F00;
+
+  position: relative;
+  -webkit-animation: pulsate 0.5s infinite; /* Safari 4.0 - 8.0 */
+      -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+}
+
+
+
+@-webkit-keyframes pulsate {
+
+  0%   {opacity: 1;}
+    25%  {opacity: 0.5; }
+    50%  {opacity: 0.25;}
+    75%  {opacity:0.5; }
+    100% {opacity: 0.75;}
+}
+
+#tmp{
+display: block;
+margin: auto;
+  cursor: pointer;
+
+}
+
+.node {
+  cursor: pointer;
+}
+
+
+.node:hover {
+  stroke: #000;
+  stroke-width: 2px;
+}
+
+.node--leaf {
+  fill: white;
+  border-collapse: collapse;
+}
+
+.label {
+  font: 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+ text-anchor: middle;
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+  font-weight: bold;
+  pointer-events: none;
+}
+.labeltmp {
+  font: 17px "Helvetica Neue", Helvetica, Arial, sans-serif;
+ text-anchor: middle;
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+}
+
+.node--root{
+  pointer-events: none;
+}
+.node--leaf.active {
+  fill: red;
+}
+.node--leaf:hover {
+ fill: white;
+ }
+
+</style>
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="TreeColors.js"></script>
+<body>
+	<header>
+		<h1> Organism: Homo sapiens</h1>
+    <h1> Repertory: V2_Trial_8_Modules</h1>
+
+
+	</header>
+
+
+		<div id="wrapper">
+  			<div id="content">	<svg id = "bubble" width="960" height="960"></svg></div>
+			<div id="sidebar">
+				<svg id = "tree" width="960"></svg></div>
+			</div>
+  <div id="cleared"></div>
+</div>
+
+
+
+
+</body>
+<script  src="bubble.js"></script>
+
+<script>
+
+</script>
